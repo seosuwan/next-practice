@@ -10,7 +10,7 @@ export default function Cart() {
       <CartItem />
       <CartItem />
       <Link href="/cart/payment">결제하기</Link>
-      <Button />
+      <Button color="blue" />
     </div>
   );
 }
@@ -24,6 +24,6 @@ function CartItem(props) {
   );
 }
 
-function Button() {
-  return <button style={{ color: "red" }}>버튼</button>;
+function Button(props) {
+  return <button style={{ background: props.color }}>버튼</button>;
 }
